@@ -50,7 +50,7 @@ CREATE TABLE `base_role` (
 -- ----------------------------
 -- Records of base_role
 -- ----------------------------
-INSERT INTO `base_role` VALUES ('1', 'sysadmin', '管理员');
+INSERT INTO `base_role` VALUES ('1', 'root', '管理员');
 INSERT INTO `base_role` VALUES ('2', 'test', '角色1');
 INSERT INTO `base_role` VALUES ('3', 'test1', '角色2');
 
@@ -86,7 +86,9 @@ CREATE TABLE `base_user` (
 -- ----------------------------
 -- Records of base_user
 -- ----------------------------
-INSERT INTO `base_user` VALUES ('1', 'sysadmin', '$2a$10$6UzMN/VMh73bAHmkMwgFZukOThm/EPzu/q.kTqCCpKUMFtljeKBaq', 'sysadmin', '1');
+INSERT INTO `base_user` VALUES ('1', 'root', '$2a$10$B5yCUv1GO69jsruc6XgsQeMsfDJhLSPe5WAx1xhEi6BGI8HHbyZbC', 'root', '1');
+INSERT INTO `base_user` VALUES ('2', 'test', '$2a$10$B5yCUv1GO69jsruc6XgsQeMsfDJhLSPe5WAx1xhEi6BGI8HHbyZbC', 'test', '1');
+INSERT INTO `base_user` VALUES ('3', 'test1', '$2a$10$B5yCUv1GO69jsruc6XgsQeMsfDJhLSPe5WAx1xhEi6BGI8HHbyZbC', 'test1', '1');
 
 -- ----------------------------
 -- Table structure for base_user_role
@@ -105,3 +107,5 @@ CREATE TABLE `base_user_role` (
 INSERT INTO `base_user_role` VALUES ('1', '1', '1');
 INSERT INTO `base_user_role` VALUES ('2', '1', '2');
 INSERT INTO `base_user_role` VALUES ('3', '1', '3');
+INSERT INTO `base_user_role` VALUES ('2', '2', '2');
+INSERT INTO `base_user_role` VALUES ('3', '3', '3');

@@ -6,13 +6,13 @@
 http://xxxx 
 
 ## 启动
-+ git clone https://github.com/fp2952/spring-boot-security-demo.git
++ git clone https://github.com/selierlin/Spring-boot-security-demo.git
 + 导入maven项目，下载所需的依赖包 
 + mysql下创建数据库admin，初始化数据脚本（执行doc包下的base-data.sql文件）
 + 修改配置文件 application.yml
 + 启动 DemoApplication.java main方法
 + 访问 http://localhost:8080/
-+ 用户名: sysadmin 密码: 000000  
++ 用户名: root 密码: root  
 
 ## 技术栈
 + spring-boot
@@ -71,4 +71,4 @@ image...
 ## 更新日志
 2018-04-23 项目初始化  
 2018-04-24 更新文档  
-待续...
+2019-04-03 更新文档

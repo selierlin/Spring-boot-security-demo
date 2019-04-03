@@ -26,8 +26,8 @@ spring:
       stat-view-servlet:
         url-pattern: /druid/*
         reset-enable: false
-        login-username: sysadmin
-        login-password: "000000"
+        login-username: root
+        login-password: "root"
   freemarker:
         request-context-attribute: request
 security:
