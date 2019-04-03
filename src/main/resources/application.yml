@@ -3,8 +3,8 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://localhost:3306/base1?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: fangp
-      password: "000000"
+      username: root
+      password: root
       driver-class-name: com.mysql.jdbc.Driver
       max-active: 20
       initial-size: 1
@@ -39,6 +39,8 @@ security:
 mybatis:
   type-aliases-package: com.github.peng.spring.boot.security.demo.mapper.model
   mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 # mapper 配置
 mapper:
   identity: select uuid()

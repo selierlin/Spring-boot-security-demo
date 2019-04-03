@@ -75,7 +75,7 @@ public class CustomMetadataSourceService implements FilterInvocationSecurityMeta
             List<BaseMenu> menuList = baseMenuService.selectMenusByUrl(url);
             if (menuList != null && menuList.size() > 0) {
                 for (BaseMenu menu : menuList) {
-                    //查询拥有该菜单权限的角色列表
+                    //这里指的是查询拥有该菜单权限的编码，如：ROLE_ADMIN
                     List<BaseRole> roles = baseRoleService.selectRolesByMenuId(menu.getId());
                     if (roles != null && roles.size() > 0) {
                         for (BaseRole role : roles) {
